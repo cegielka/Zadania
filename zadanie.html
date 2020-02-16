@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Samochody</title>
+</head>
+<style>
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 520px;
+  margin: auto;
+  background-color: #555;
+  height: 540px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: navy;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  float: left;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color:white;
+  color: black;
+}
+
+.active {
+    color: white;
+    background-color: green;
+}
+.topnav a.icon {
+  float: right;
+}
+
+.zdj{
+    display: inline-block;
+    width: 280px;
+    height: 280px;
+    background: url("car.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
+.other{
+display: inline-block;
+font-size: medium;
+}
+</style>
+<body>
+   
+
+        
+        <div class="topnav">
+          <div id="myLinks">
+            <a class="other">Nowości</a>
+            <a class="other">Kontakt</a>
+            <a class="other">O nas</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <br>
+        <br>
+        <br>
+        
+        
+        <div style="padding-left:16px">
+            <div class="zdj"></div>
+            <div class="zdj"></div>
+            <div class="zdj"></div>
+            <div class="zdj"></div>
+            <div class="zdj"></div>
+            <div class="zdj"></div>
+            <div class="zdj"></div>
+            <div class="zdj"></div>
+            <div class="zdj"></div>
+            <div class="zdj"></div>
+            <div class="zdj"></div>
+            
+        </div>
+      
+</body>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</html>
